@@ -10,7 +10,7 @@ const Services = () => {
       description: 'Potongan rambut klasik yang timeless dan elegan. Cocok untuk berbagai acara formal maupun casual.',
       price: 35000,
       duration: '30 menit',
-      image: '✂️',
+      image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       features: ['Konsultasi gaya', 'Shampooing', 'Styling', 'Hair tonic']
     },
     {
@@ -19,7 +19,7 @@ const Services = () => {
       description: 'Potongan fade modern dengan gradasi halus. Memberikan kesan fresh dan kekinian.',
       price: 45000,
       duration: '45 menit',
-      image: '💇‍♂️',
+      image: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       features: ['Fade cut', 'Beard trim', 'Styling', 'Aftercare']
     },
     {
@@ -28,7 +28,7 @@ const Services = () => {
       description: 'Perawatan jenggot profesional dengan teknik cukur tradisional dan modern.',
       price: 25000,
       duration: '20 menit',
-      image: '🪒',
+      image: 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       features: ['Beard shaping', 'Hot towel', 'Beard oil', 'Styling']
     },
     {
@@ -37,7 +37,7 @@ const Services = () => {
       description: 'Desain artistik pada rambut dengan pola unik sesuai keinginan Anda.',
       price: 75000,
       duration: '60 menit',
-      image: '🎨',
+      image: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       features: ['Custom design', 'Precision cutting', 'Detailing', 'Photo session']
     },
     {
@@ -46,7 +46,7 @@ const Services = () => {
       description: 'Perawatan wajah lengkap untuk kulit sehat dan bersih.',
       price: 50000,
       duration: '45 menit',
-      image: '🧴',
+      image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       features: ['Deep cleansing', 'Exfoliation', 'Mask treatment', 'Moisturizing']
     },
     {
@@ -55,7 +55,7 @@ const Services = () => {
       description: 'Cuci rambut dengan shampo premium dan styling sesuai keinginan.',
       price: 20000,
       duration: '25 menit',
-      image: '🧴',
+      image: 'https://images.unsplash.com/photo-1562004760-aceed7bb0fe3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       features: ['Premium shampoo', 'Conditioning', 'Blow dry', 'Styling']
     },
     {
@@ -64,7 +64,7 @@ const Services = () => {
       description: 'Paket lengkap grooming untuk penampilan maksimal.',
       price: 85000,
       duration: '90 menit',
-      image: '👑',
+      image: 'https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       features: ['Haircut', 'Beard grooming', 'Facial', 'Hair styling']
     },
     {
@@ -73,7 +73,7 @@ const Services = () => {
       description: 'Potongan rambut khusus untuk anak-anak dengan suasana yang menyenangkan.',
       price: 30000,
       duration: '30 menit',
-      image: '👶',
+      image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       features: ['Kid-friendly approach', 'Fun atmosphere', 'Quick service', 'Styling']
     }
   ];
@@ -150,7 +150,13 @@ const Services = () => {
                 className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
               >
                 <div className="text-center mb-6">
-                  <div className="text-5xl mb-4">{service.image}</div>
+                  <div className="w-full h-48 mb-4 rounded-lg overflow-hidden">
+                    <img 
+                      src={service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                   <h3 className="font-bold text-xl text-dark mb-2">{service.title}</h3>
                   <p className="text-gray-600 text-sm mb-4">{service.description}</p>
                 </div>

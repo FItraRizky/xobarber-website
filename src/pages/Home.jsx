@@ -16,25 +16,25 @@ const Home = () => {
       title: 'Potong Rambut',
       description: 'Gaya rambut modern sesuai bentuk wajah',
       price: 'Mulai 35K',
-      image: 'https://images.unsplash.com/photo-1622286346003-c8b4473c0ca2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
       title: 'Cukur Jenggot',
       description: 'Cukur bersih dengan teknik profesional',
       price: 'Mulai 25K',
-      image: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      image: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
       title: 'Hair Styling',
       description: 'Styling rambut untuk acara spesial',
       price: 'Mulai 45K',
-      image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      image: 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
       title: 'Facial Treatment',
       description: 'Perawatan wajah untuk kulit sehat',
       price: 'Mulai 50K',
-      image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      image: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
   ];
 
@@ -43,19 +43,19 @@ const Home = () => {
       name: 'Ahmad Rizki',
       rating: 5,
       comment: 'Pelayanan sangat memuaskan! Barberman profesional dan hasil potongan rambut sesuai keinginan.',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
+      avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
     },
     {
       name: 'Budi Santoso',
       rating: 5,
       comment: 'Tempat favorit untuk grooming. Suasana nyaman dan harga terjangkau.',
-      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
+      avatar: 'https://images.unsplash.com/photo-1566492031773-4f4e44671d66?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
     },
     {
       name: 'Deni Pratama',
       rating: 5,
       comment: 'Booking online mudah, pelayanan cepat. Recommended banget!',
-      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
+      avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
     },
   ];
 
@@ -359,7 +359,7 @@ const Home = () => {
 
       {/* CTA Section with Parallax */}
       <ParallaxBackground
-        backgroundImage="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
         speed={0.4}
         className="py-24"
         overlay={true}
