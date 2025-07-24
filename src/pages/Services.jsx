@@ -1,105 +1,126 @@
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { Scissors, Clock, Star, ArrowRight } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { Scissors, Clock, Star, ArrowRight } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
       id: 1,
-      title: 'Classic Haircut',
-      description: 'Potongan rambut klasik yang timeless dan elegan. Cocok untuk berbagai acara formal maupun casual.',
+      title: "Classic Haircut",
+      description:
+        "Potongan rambut klasik yang timeless dan elegan. Cocok untuk berbagai acara formal maupun casual.",
       price: 35000,
-      duration: '30 menit',
-      image: '✂️',
-      features: ['Konsultasi gaya', 'Shampooing', 'Styling', 'Hair tonic']
+      duration: "30 menit",
+      image: "✂️",
+      features: ["Konsultasi gaya", "Shampooing", "Styling", "Hair tonic"],
     },
     {
       id: 2,
-      title: 'Modern Fade',
-      description: 'Potongan fade modern dengan gradasi halus. Memberikan kesan fresh dan kekinian.',
+      title: "Modern Fade",
+      description:
+        "Potongan fade modern dengan gradasi halus. Memberikan kesan fresh dan kekinian.",
       price: 45000,
-      duration: '45 menit',
-      image: '💇‍♂️',
-      features: ['Fade cut', 'Beard trim', 'Styling', 'Aftercare']
+      duration: "45 menit",
+      image: "💇‍♂️",
+      features: ["Fade cut", "Beard trim", "Styling", "Aftercare"],
     },
     {
       id: 3,
-      title: 'Beard Grooming',
-      description: 'Perawatan jenggot profesional dengan teknik cukur tradisional dan modern.',
+      title: "Beard Grooming",
+      description:
+        "Perawatan jenggot profesional dengan teknik cukur tradisional dan modern.",
       price: 25000,
-      duration: '20 menit',
-      image: '🪒',
-      features: ['Beard shaping', 'Hot towel', 'Beard oil', 'Styling']
+      duration: "20 menit",
+      image: "🪒",
+      features: ["Beard shaping", "Hot towel", "Beard oil", "Styling"],
     },
     {
       id: 4,
-      title: 'Hair Tattoo',
-      description: 'Desain artistik pada rambut dengan pola unik sesuai keinginan Anda.',
+      title: "Hair Tattoo",
+      description:
+        "Desain artistik pada rambut dengan pola unik sesuai keinginan Anda.",
       price: 75000,
-      duration: '60 menit',
-      image: '🎨',
-      features: ['Custom design', 'Precision cutting', 'Detailing', 'Photo session']
+      duration: "60 menit",
+      image: "🎨",
+      features: [
+        "Custom design",
+        "Precision cutting",
+        "Detailing",
+        "Photo session",
+      ],
     },
     {
       id: 5,
-      title: 'Facial Treatment',
-      description: 'Perawatan wajah lengkap untuk kulit sehat dan bersih.',
+      title: "Facial Treatment",
+      description: "Perawatan wajah lengkap untuk kulit sehat dan bersih.",
       price: 50000,
-      duration: '45 menit',
-      image: '🧴',
-      features: ['Deep cleansing', 'Exfoliation', 'Mask treatment', 'Moisturizing']
+      duration: "45 menit",
+      image: "🧴",
+      features: [
+        "Deep cleansing",
+        "Exfoliation",
+        "Mask treatment",
+        "Moisturizing",
+      ],
     },
     {
       id: 6,
-      title: 'Hair Wash & Styling',
-      description: 'Cuci rambut dengan shampo premium dan styling sesuai keinginan.',
+      title: "Hair Wash & Styling",
+      description:
+        "Cuci rambut dengan shampo premium dan styling sesuai keinginan.",
       price: 20000,
-      duration: '25 menit',
-      image: '🧴',
-      features: ['Premium shampoo', 'Conditioning', 'Blow dry', 'Styling']
+      duration: "25 menit",
+      image: "🧴",
+      features: ["Premium shampoo", "Conditioning", "Blow dry", "Styling"],
     },
     {
       id: 7,
-      title: 'Complete Grooming',
-      description: 'Paket lengkap grooming untuk penampilan maksimal.',
+      title: "Complete Grooming",
+      description: "Paket lengkap grooming untuk penampilan maksimal.",
       price: 85000,
-      duration: '90 menit',
-      image: '👑',
-      features: ['Haircut', 'Beard grooming', 'Facial', 'Hair styling']
+      duration: "90 menit",
+      image: "👑",
+      features: ["Haircut", "Beard grooming", "Facial", "Hair styling"],
     },
     {
       id: 8,
-      title: 'Kids Haircut',
-      description: 'Potongan rambut khusus untuk anak-anak dengan suasana yang menyenangkan.',
+      title: "Kids Haircut",
+      description:
+        "Potongan rambut khusus untuk anak-anak dengan suasana yang menyenangkan.",
       price: 30000,
-      duration: '30 menit',
-      image: '👶',
-      features: ['Kid-friendly approach', 'Fun atmosphere', 'Quick service', 'Styling']
-    }
+      duration: "30 menit",
+      image: "👶",
+      features: [
+        "Kid-friendly approach",
+        "Fun atmosphere",
+        "Quick service",
+        "Styling",
+      ],
+    },
   ];
 
   const packages = [
     {
-      name: 'Paket Hemat',
-      description: 'Haircut + Beard Grooming',
+      name: "Paket Hemat",
+      description: "Haircut + Beard Grooming",
       originalPrice: 60000,
       discountPrice: 50000,
-      savings: 10000
+      savings: 10000,
     },
     {
-      name: 'Paket Premium',
-      description: 'Haircut + Facial + Styling',
+      name: "Paket Premium",
+      description: "Haircut + Facial + Styling",
       originalPrice: 105000,
       discountPrice: 85000,
-      savings: 20000
+      savings: 20000,
     },
     {
-      name: 'Paket Ultimate',
-      description: 'Complete Grooming + Hair Tattoo',
+      name: "Paket Ultimate",
+      description: "Complete Grooming + Hair Tattoo",
       originalPrice: 160000,
       discountPrice: 130000,
-      savings: 30000
-    }
+      savings: 30000,
+    },
   ];
 
   return (
@@ -117,7 +138,8 @@ const Services = () => {
               Layanan <span className="text-gold">Premium</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Berbagai layanan grooming profesional dengan teknologi modern dan teknik terbaik untuk penampilan maksimal Anda.
+              Berbagai layanan grooming profesional dengan teknologi modern dan
+              teknik terbaik untuk penampilan maksimal Anda.
             </p>
           </motion.div>
         </div>
@@ -136,7 +158,8 @@ const Services = () => {
               Pilih Layanan Favorit Anda
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Setiap layanan dikerjakan oleh barberman berpengalaman dengan peralatan berkualitas tinggi
+              Setiap layanan dikerjakan oleh barberman berpengalaman dengan
+              peralatan berkualitas tinggi
             </p>
           </motion.div>
 
@@ -151,13 +174,20 @@ const Services = () => {
               >
                 <div className="text-center mb-6">
                   <div className="text-5xl mb-4">{service.image}</div>
-                  <h3 className="font-bold text-xl text-dark mb-2">{service.title}</h3>
-                  <p className="text-gray-600 text-sm mb-4">{service.description}</p>
+                  <h3 className="font-bold text-xl text-dark mb-2">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    {service.description}
+                  </p>
                 </div>
 
                 <div className="space-y-3 mb-6">
                   {service.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center text-sm text-gray-600">
+                    <div
+                      key={idx}
+                      className="flex items-center text-sm text-gray-600"
+                    >
                       <Star className="h-4 w-4 text-gold mr-2 flex-shrink-0" />
                       {feature}
                     </div>
@@ -172,11 +202,11 @@ const Services = () => {
                     </div>
                     <div className="text-right">
                       <div className="font-bold text-2xl text-dark">
-                        Rp {service.price.toLocaleString('id-ID')}
+                        Rp {service.price.toLocaleString("id-ID")}
                       </div>
                     </div>
                   </div>
-                  
+
                   <Link
                     to="/booking"
                     state={{ selectedService: service.title }}
@@ -205,7 +235,8 @@ const Services = () => {
               Paket <span className="text-gold">Hemat</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Kombinasi layanan dengan harga lebih hemat untuk pengalaman grooming yang lengkap
+              Kombinasi layanan dengan harga lebih hemat untuk pengalaman
+              grooming yang lengkap
             </p>
           </motion.div>
 
@@ -219,21 +250,21 @@ const Services = () => {
                 className="bg-gradient-to-br from-gold to-yellow-600 rounded-2xl p-8 text-white relative overflow-hidden group hover:scale-105 transition-transform duration-300"
               >
                 <div className="absolute top-4 right-4 bg-white text-gold px-3 py-1 rounded-full text-sm font-bold">
-                  Hemat Rp {pkg.savings.toLocaleString('id-ID')}
+                  Hemat Rp {pkg.savings.toLocaleString("id-ID")}
                 </div>
-                
+
                 <h3 className="font-bold text-2xl mb-2">{pkg.name}</h3>
                 <p className="text-yellow-100 mb-6">{pkg.description}</p>
-                
+
                 <div className="mb-6">
                   <div className="text-yellow-200 line-through text-lg">
-                    Rp {pkg.originalPrice.toLocaleString('id-ID')}
+                    Rp {pkg.originalPrice.toLocaleString("id-ID")}
                   </div>
                   <div className="font-bold text-3xl">
-                    Rp {pkg.discountPrice.toLocaleString('id-ID')}
+                    Rp {pkg.discountPrice.toLocaleString("id-ID")}
                   </div>
                 </div>
-                
+
                 <Link
                   to="/booking"
                   state={{ selectedPackage: pkg.name }}
@@ -260,7 +291,8 @@ const Services = () => {
               Tidak Yakin Pilih <span className="text-gold">Layanan Apa?</span>
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Konsultasi gratis dengan barberman profesional kami untuk mendapatkan rekomendasi layanan yang sesuai dengan kebutuhan Anda.
+              Konsultasi gratis dengan barberman profesional kami untuk
+              mendapatkan rekomendasi layanan yang sesuai dengan kebutuhan Anda.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -271,7 +303,7 @@ const Services = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <a
-                href="https://wa.me/6287878177527"
+                href="https://wa.me/+62 878-7817-7527"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-2 border-gold text-gold hover:bg-gold hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 text-center"
