@@ -12,13 +12,21 @@ const ParallaxBackground = ({
   const backgroundRef = useRef(null);
 
   useEffect(() => {
+    let ticking = false;
+    
     const handleScroll = () => {
-      if (!backgroundRef.current) return;
-      
-      const scrolled = window.pageYOffset;
-      const parallax = scrolled * speed;
-      
-      backgroundRef.current.style.transform = `translate3d(0, ${parallax}px, 0)`;
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          if (!backgroundRef.current) return;
+          
+          const scrolled = window.pageYOffset;
+          const parallax = scrolled * speed;
+          
+          backgroundRef.current.style.transform = `translate3d(0, ${parallax}px, 0)`;
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
     const handleResize = () => {
@@ -55,7 +63,7 @@ const ParallaxBackground = ({
       {/* Parallax Background */}
       <div 
         ref={backgroundRef}
-        className="parallax-element absolute inset-0 w-full h-[120%] bg-cover bg-center bg-no-repeat"
+        className="parallax-element absolute inset-0 w-full h-[120%] bg-cover bg-center bg-no-repeat will-change-transform"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           top: '-10%',

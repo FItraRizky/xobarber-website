@@ -183,8 +183,8 @@ const Home = () => {
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="text-center"
+                  transition={{ duration: 0.5, delay: index * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  className="text-center gpu-accelerated smooth-hover"
                 >
                   <div className="bg-gold rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="h-8 w-8 text-white" />
@@ -204,8 +204,8 @@ const Home = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-20"
+            transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="text-center mb-20 gpu-accelerated"
           >
             <span className="inline-block px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-sm font-semibold mb-4">
               🔥 Layanan Terpopuler
@@ -230,8 +230,8 @@ const Home = () => {
                 key={index}
                 initial={{ opacity: 0, y: 30, scale: 0.9 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group relative bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 border border-gray-100"
+                transition={{ duration: 0.6, delay: index * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
+                className="group relative bg-white rounded-3xl shadow-smooth overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 border border-gray-100 gpu-accelerated smooth-hover"
               >
                 <div className="relative h-56 overflow-hidden">
                   <img 
@@ -316,8 +316,8 @@ const Home = () => {
                 key={index}
                 initial={{ opacity: 0, y: 30, scale: 0.9 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group relative bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 hover:border-amber-500/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-500/20"
+                transition={{ duration: 0.6, delay: index * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
+                className="group relative bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 hover:border-amber-500/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-500/20 gpu-accelerated smooth-hover"
               >
                 <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center shadow-xl">
                   <span className="text-white text-2xl font-bold">"</span>

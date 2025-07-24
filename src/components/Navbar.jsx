@@ -17,7 +17,12 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-lg fixed w-full top-0 z-50">
+    <motion.nav
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+      className="bg-white shadow-lg fixed w-full top-0 z-50 gpu-accelerated"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -35,7 +40,7 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="text-dark hover:text-gold px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                  className="text-dark hover:text-gold px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 smooth-hover"
                 >
                   {item.name}
                 </Link>
@@ -47,7 +52,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <Link
               to="/booking"
-              className="bg-gold hover:bg-yellow-600 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105"
+              className="bg-gold hover:bg-yellow-600 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 smooth-hover shadow-smooth"
             >
               Booking Sekarang
             </Link>
@@ -95,7 +100,7 @@ const Navbar = () => {
           </Link>
         </div>
       </motion.div>
-    </nav>
+    </motion.nav>
   );
 };
 

@@ -22,7 +22,7 @@ const Footer = () => {
                 href="https://instagram.com/xobarber"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gold hover:bg-yellow-600 p-3 rounded-full transition-colors duration-300"
+                className="bg-gold hover:bg-yellow-600 p-3 rounded-full transition-all duration-300 smooth-hover"
               >
                 <Instagram className="h-5 w-5 text-white" />
               </a>
@@ -42,7 +42,7 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4 text-gold">Menu</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-300 hover:text-gold transition-colors duration-300">
+                <Link to="/" className="text-gray-300 hover:text-gold transition-all duration-300 smooth-hover">
                   Home
                 </Link>
               </li>

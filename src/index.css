@@ -4983,3 +4983,146 @@ html {
 .backdrop-sepia {
   backdrop-filter: sepia(100%);
 }
+
+/* ===== SMOOTHNESS OPTIMIZATIONS ===== */
+
+/* Enhanced Global Smoothness */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* GPU Acceleration for Better Performance */
+.gpu-accelerated {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  contain: layout style paint;
+}
+
+/* Enhanced Parallax Performance */
+.parallax-container {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  contain: layout style paint;
+}
+
+.parallax-element {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+/* Ultra Smooth Transitions */
+button, a, input, textarea, select {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity, background-color, border-color, color;
+}
+
+/* Smooth Image Loading */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Enhanced Hover Effects */
+.smooth-hover {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.smooth-hover:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Buttery Smooth Animations */
+@keyframes smoothFadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes smoothSlideUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes smoothScale {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.animate-smooth-fade {
+  animation: smoothFadeIn 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.animate-smooth-slide {
+  animation: smoothSlideUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.animate-smooth-scale {
+  animation: smoothScale 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Enhanced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .parallax-element {
+    transform: none !important;
+  }
+}
+
+/* Scroll Performance */
+html {
+  scroll-padding-top: 80px;
+}
+
+/* Hardware Acceleration for Common Elements */
+.card, .button, .nav-item, .hero-section, .service-card {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+/* Smooth Focus States */
+*:focus {
+  outline: 2px solid var(--primary-gold);
+  outline-offset: 2px;
+  transition: outline 0.2s ease;
+}
+
+/* Performance Optimized Shadows */
+.shadow-smooth {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.shadow-smooth:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
