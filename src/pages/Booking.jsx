@@ -141,7 +141,7 @@ const Booking = () => {
       `📝 Catatan: ${formData.notes || 'Tidak ada'}\n\n` +
       `Mohon konfirmasi ketersediaan jadwal. Terima kasih!`;
 
-    const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/087878177527?text=${encodeURIComponent(message)}`;
     
     setIsSubmitting(false);
     setShowSuccess(true);

@@ -49,7 +49,7 @@ const Contact = () => {
     {
       name: 'WhatsApp',
       icon: MessageCircle,
-      url: 'https://wa.me/6281234567890',
+      url: 'https://wa.me/087878177527',
       color: 'bg-green-500 hover:bg-green-600',
       description: 'Chat langsung untuk booking'
     },
@@ -386,7 +386,7 @@ const Contact = () => {
                 Booking Online
               </motion.a>
               <motion.a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/087878177527"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
