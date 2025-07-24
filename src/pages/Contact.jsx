@@ -49,7 +49,7 @@ const Contact = () => {
     {
       name: 'WhatsApp',
       icon: MessageCircle,
-      url: 'https://wa.me/+6287878177527',
+      url: 'https://wa.me/+62 878-7817-7527',
       color: 'bg-green-500 hover:bg-green-600',
       description: 'Chat langsung untuk booking'
     },
@@ -386,7 +386,7 @@ const Contact = () => {
                 Booking Online
               </motion.a>
               <motion.a
-                href="https://wa.me/+6287878177527"
+                href="https://wa.me/+62 878-7817-7527"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}

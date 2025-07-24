@@ -375,7 +375,7 @@ const Pricing = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <a
-                href="https://wa.me/+6287878177527"
+                href="https://wa.me/+62 878-7817-7527"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-2 border-gold text-gold hover:bg-gold hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 text-center"
